@@ -1,0 +1,53 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org" />
+
+  <title>Seppi Todo List</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="stylesheet" href="css/jquery-ui.css" type="text/css" />
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/todojs.js"></script>
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400;300' rel='stylesheet' type='text/css'>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Main body -->
+    <div class="jumbotron">
+      <div id="wrapper">
+          <div id="bodyWrapper">
+            <div style="background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.4);" id="todo_wrapper" class="white_bg">
+              <h2 class="customfont">This Week's Todo List</h2>
+              <div class="scrollingwrapper">
+                <ul id="week_list"></ul>
+              </div>
+            </div><!-- end todo_wrapper -->
+            <div style="background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.4);" id="todo_wrapper" class="white_bg">
+              <h2 class="customfont">This Month's Todo List</h2>
+              <div class="scrollingwrapper">
+                <ul id="month_list"></ul>
+              </div>
+            </div><!-- end todo_wrapper -->
+
+            <div style="background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.4);" id="todo_form" class="white_bg">
+              <div id="form_wrapper">
+                <textarea id="todo_item_text" placeholder="Enter todo here"></textarea> 
+                <input type="text" id="todo_due_date" placeholder="Due Date" />
+              </div><!-- end form_wrapper -->
+              <input type="submit" id="create_todo" value="Add Todo" class="button" />
+              <input type="submit" id="finished_todo" value="Completed" class="button" />
+            </div><!-- end todo_form -->
+          </div><!-- end bodyWrapper -->
+      </div><!-- end wrapper -->
+    </div>
+</body>
+</html>
